@@ -1,10 +1,12 @@
+// import * as React from 'react';
 import React, { Component, useState } from 'react';
-import ReactDOM from 'react-dom';
+import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
-function SearchBar() {
+function Test() {
   const [name, setName] = useState('');
+  // name : ""
 
   const handleClick = (event) => {
     // event.preventDefault();
@@ -51,5 +53,36 @@ function SearchBar() {
     </div>
   );
 }
+export default Test;
 
-export default SearchBar;
+// const [name, setName] = useState('');
+//  // name : ""
+// food: []
+
+// fetch api
+// parse it
+// grab the parced data
+// store it in the state
+/*
+   {
+    name:
+    cal:
+    protein
+    } 
+    */
+
+// declare storedData []
+
+//iterate through data and store it in empty variable
+
+/* 
+const rows = [
+createData('storedData.name', storedData.cal , storedData.protein, storedData.sugar),
+createData('storedData.name', storedData.cal , storedData.protein, storedData.sugar),
+createData('storedData.name', storedData.cal , storedData.protein, storedData.sugar),
+createData('storedData.name', storedData.cal , storedData.protein, storedData.sugar),
+createData('storedData.name', storedData.cal , storedData.protein, storedData.sugar),
+];
+    
+    
+    */
