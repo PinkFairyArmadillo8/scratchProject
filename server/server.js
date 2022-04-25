@@ -19,7 +19,7 @@ app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
 
-app.get('/', foodController.getProduct, (req, res) => {
-  return res.status(200).json(res.locals.searchResults)
-})
+app.use('/', foodController.getProduct, (req, res) => {
+  return res.status(200).json(res.locals.searchResults);
+});
 // module.exports = app;

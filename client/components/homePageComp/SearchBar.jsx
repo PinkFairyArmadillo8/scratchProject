@@ -7,7 +7,7 @@ function SearchBar() {
   const [name, setName] = useState('');
 
   const handleClick = (event) => {
-    // event.preventDefault();
+    event.preventDefault();
 
     const bodyObject = {
       searchTerm: name,
@@ -20,7 +20,9 @@ function SearchBar() {
       },
       body: JSON.stringify(bodyObject), // req.body.searchTerm
     })
-      .then((res) => res.json())
+      .then((res) => {
+        console.log(res.json());
+      })
       .then((data) => {
         console.log(data);
       })
