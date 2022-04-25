@@ -62,6 +62,7 @@ foodController.getProduct = async (req, res, next) => {
       resultsArray.push(foodObj);
       i++;
     }
+    res.locals.searchResults = resultsArray;
 
     console.log(resultsArray);
     //   console.log('This is the res.locals', res.locals.searchResults)
@@ -76,15 +77,3 @@ foodController.getProduct = async (req, res, next) => {
 };
 
 module.exports = foodController;
-
-/*
-"energy-kcal_100g": 180,
-    "sodium_100g": 0.16,
-"carbohydrates_100g": 26.9,
-"fat_100g": 7,
-"saturated-fat_100g": 0.8,
-"fiber_100g": 2.3,
- "proteins_100g": 2.3,
-  "sugars_100g": 0.2,
-
-*/
