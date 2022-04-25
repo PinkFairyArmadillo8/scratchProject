@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = 3000;
+const foodController = require('../getFoodMiddleware');
+// Api Call/openfoodfacts-react-native/API/Api.js
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -17,4 +19,7 @@ app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
 
+app.get('/', foodController.getProduct, (req, res) => {
+  return res.status(200).json(res.locals.searchResults)
+})
 // module.exports = app;
