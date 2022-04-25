@@ -19,7 +19,7 @@ foodController.getProduct = async (req, res, next) => {
             }
         });
         const product = await response.json();
-        console.log('this is the products page', product)
+        // console.log('this is the products page', product)
         //   res.locals.searchResults = product;
         //     const { energy-kcal_100g, sodium_100g, fat_100g, saturated - fat_100g, fiber_100g, proteins_100g, sugars_100g
         // } = product.product[0].nutriments;
@@ -60,6 +60,7 @@ foodController.getProduct = async (req, res, next) => {
           resultsArray.push(foodObj);
           i++
         };
+    res.locals.searchResults = resultsArray;
 
     console.log(resultsArray);
     //   console.log('This is the res.locals', res.locals.searchResults)
