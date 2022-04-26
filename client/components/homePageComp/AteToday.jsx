@@ -8,11 +8,7 @@ const AteToday = () => {
     // err handler
   }
 
-  return (
-    <div id="ateToday">
-      <p> I ate this today </p>
-    </div>
-  );
+  return <div id="ateToday">{/* <p> I ate this today </p> */}</div>;
 };
 
 export default AteToday;

@@ -18,3 +18,38 @@
   display: flex;
   justify-content: center;
 }
+
+#resultsList {
+  background-color: goldenrod;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 10px 15px 39px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.bigBody {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#button {
+  background-color: goldenrod;
+}
+
+#ateIt {
+  color: white;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: rgb(32, 218, 171);
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+#ListName {
+  background-color: salmon;
+}

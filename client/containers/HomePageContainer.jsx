@@ -11,7 +11,7 @@ const HomePageContainer = () => {
       <h1> Big Body Nutrients </h1>
       <SearchBar />
       <AteToday />
-      <Test />
+      {/* <Test /> */}
     </div>
   );
 };

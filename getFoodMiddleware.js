@@ -64,7 +64,7 @@ foodController.getProduct = async (req, res, next) => {
     }
     res.locals.searchResults = resultsArray;
 
-    console.log(resultsArray);
+    // console.log(resultsArray);
     //   console.log('This is the res.locals', res.locals.searchResults)
     // if (product.status === 0) {
     //     return null;
